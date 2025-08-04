@@ -9,9 +9,7 @@ dotenv.config();
 
 // Init app
 const app = express();
-app.use(cors({
-    origin: "https://mini-linked-in-flax.vercel.app/"
-}));
+app.use(cors());
 app.use(express.json());
 
 // DB Connection
